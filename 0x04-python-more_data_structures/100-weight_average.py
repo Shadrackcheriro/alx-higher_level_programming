@@ -2,10 +2,10 @@
 def weight_average(my_list=[]):
     if not my_list:
         return 0
-    kim = 0
-    blee = 0
+    num = 0
+    den = 0
     for tup in my_list:
-        kim += tup[0] * tup[1]
-        blee += tup[1]
+        num += tup[0] * tup[1]
+        den += tup[1]
 
-    return blee/kim
+    return num/den
