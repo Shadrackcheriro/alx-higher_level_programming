@@ -1,16 +1,18 @@
 #!/usr/bin/python3
-SinglyLinkedList = __import__('100-singly_linked_list').SinglyLinkedList
+safe_print_integer_err = \
+    __import__('100-safe_print_integer_err').safe_print_integer_err
 
-sll = SinglyLinkedList()
-sll.sorted_insert(2)
-sll.sorted_insert(5)
-sll.sorted_insert(3)
-sll.sorted_insert(10)
-sll.sorted_insert(1)
-sll.sorted_insert(-4)
-sll.sorted_insert(-3)
-sll.sorted_insert(4)
-sll.sorted_insert(5)
-sll.sorted_insert(12)
-sll.sorted_insert(3)
-print(sll)
+value = 89
+has_been_print = safe_print_integer_err(value)
+if not has_been_print:
+    print("{} is not an integer".format(value))
+
+value = -89
+has_been_print = safe_print_integer_err(value)
+if not has_been_print:
+    print("{} is not an integer".format(value))
+
+value = "School"
+has_been_print = safe_print_integer_err(value)
+if not has_been_print:
+    print("{} is not an integer".format(value))
