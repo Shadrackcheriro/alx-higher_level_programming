@@ -1,2 +1,4 @@
--- Computer score average of all records in 'second_table' of 'hbtn_0c_0'
-SELECT AVG(score) AS average FROM second_table;
+-- List number of records with same score in 'second_table'
+SELECT score, COUNT(1) AS number FROM second_table
+GROUP BY score
+ORDER BY number DESC;
