@@ -1,3 +1,2 @@
- Displays all databases
--- Query to display databases
+-- Lists all databases of my MySQL server
 SHOW DATABASES;
