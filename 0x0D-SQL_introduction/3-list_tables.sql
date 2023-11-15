@@ -1,3 +1,2 @@
-- Lists all the tables of a database
--- Query to list all tables of a database
-SHOW TABLES;
+-- List all tables of a database in your MySQL database
+SHOW tables;
